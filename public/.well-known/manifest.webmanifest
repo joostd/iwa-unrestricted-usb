@@ -1,0 +1,25 @@
+{
+  "id": "/",
+  "short_name": "IWA USB",
+  "name": "IWA Unrestricted USB Demo",
+  "version": "0.1.4",
+  "update_manifest_url": "https://github.com/chromeos/iwa-sink/releases/latest/download/update.json",
+  "icons": [
+    {
+      "src": "/images/icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "display_override": ["borderless"],
+  "scope": "/",
+  "isolated_storage": true,
+  "permissions_policy": {
+    "cross-origin-isolated": ["self"],
+    "usb": [ "self" ],
+    "usb-unrestricted": [ "self" ]
+  }
+}
